@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Fontawesome -->
     <link
       rel="stylesheet"
@@ -17,14 +19,46 @@
   </head>
   <body>
     <!-- Header Start -->
-    <header id="header">
+    <header id="home">
       <nav class="navbar" aria-label="Main navigation">
-        <a href="#">
-          <img src="./images/logo.png" alt="Logo" />
-        </a>
-        <ul>
-          <li><a href="#products"></a></li>
-        </ul>
+        <div class="navbar-flex container">
+          <!-- Logo -->
+          <a href="#">
+            <img
+              src="./images/logo.png"
+              class="logo"
+              alt="Cozy Corner Furniture Logo"
+            />
+          </a>
+          <!-- navbar-links -->
+          <ul class="navbar-list">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <!-- Header actions -->
+          <div class="header-actions">
+            <a href="tel:+01012345678">
+              <i class="fa-solid fa-phone"></i>
+              <span>+01012345678</span>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-regular fa-user"></i>
+            </a>
+
+            <a href="#" class="icon">
+              <i class="fa-regular fa-heart"></i>
+              <span class="badge">0</span>
+            </a>
+
+            <a href="#" class="icon">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="badge">0</span>
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- Header End -->
