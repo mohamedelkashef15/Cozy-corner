@@ -222,3 +222,38 @@ a {
 /* Animation +  */
 
 /* Header End */
+
+/* Main Start */
+/* Categories Start */
+#categories {
+  padding: 5rem 0;
+}
+
+#categories h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+#categories .categories-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+#categories .categories-grid .category img {
+  width: 110px;
+  height: 110px;
+  /* ? */
+  object-fit: contain;
+}
+
+#categories .categories-grid .category h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+/* Categories End */
+/* Main End */
