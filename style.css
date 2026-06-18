@@ -12,6 +12,7 @@
   --green: #2ea66d;
   --light-green: #edf6f2;
   --red: #bb0925;
+  --white: #fff;
 }
 
 html,
@@ -33,6 +34,21 @@ a {
   margin: 0 auto;
 }
 
+.btn {
+  display: inline-block;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 15px;
+  border: 1px solid var(--green);
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: var(--white);
+  color: var(--green);
+}
 /* Header Start */
 .navbar {
   padding: 1rem 2rem;
@@ -42,6 +58,9 @@ a {
   top: 0;
   right: 0;
   left: 0;
+  /* ? Explain why we use z-index in navbar */
+  z-index: 1000;
+  background-color: var(--white);
 }
 
 .navbar .navbar-flex {
@@ -114,7 +133,7 @@ a {
   top: -8px;
   left: 15px;
   background-color: var(--green);
-  color: #fff;
+  color: var(--white);
   border-radius: 50%;
   width: 18px;
   height: 18px;
@@ -123,5 +142,83 @@ a {
   align-items: center;
   font-size: 12px;
 }
+
+/* Hero */
+.hero {
+  height: 80vh;
+}
+
+.swiper-slide,
+.hero-slider {
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide .hero-content {
+  position: absolute;
+  top: 30%;
+  left: 5rem;
+  color: var(--white);
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 3px 1rem;
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  font-size: 13px;
+}
+
+.hero-content h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.hero-content p {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+/* Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+
+  border: 1px solid var(--white);
+  border-radius: 50%;
+
+  color: var(--white) !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+/* Pagination */
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--white);
+  opacity: 0.7;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+/* Animation +  */
 
 /* Header End */
