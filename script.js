@@ -18,3 +18,15 @@ const swiper = new Swiper(".hero-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// You must add that code in order the other products to be visable
+const productsSwiper = new Swiper(".products-slider", {
+  slidesPerView: 5,
+  spaceBetween: 20,
+  loop: true,
+
+  navigation: {
+    nextEl: ".products-next",
+    prevEl: ".products-prev",
+  },
+});
