@@ -53,6 +53,21 @@ a {
   color: var(--green);
 }
 
+.btn-arrow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn-arrow:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+
 .dark-content {
   color: #000;
 }
@@ -268,7 +283,8 @@ a {
 #offers,
 #products,
 #inspiration,
-#collections {
+#collections,
+#delivery {
   padding: 3rem 0;
 }
 
@@ -352,21 +368,6 @@ a {
 #products .section-header {
   display: flex;
   justify-content: space-between;
-}
-
-.products-arrows button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #000;
-  background: transparent;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-.products-arrows button:hover {
-  color: var(--green);
-  border-color: var(--green);
 }
 
 .product-img {
@@ -528,5 +529,45 @@ a {
   transform: translateY(-10px);
 }
 /* Collections End */
+/* Delivery Start */
+.delivery-banner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.delivery-banner .delivery-content {
+  background-color: var(--light-green);
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.delivery-banner .delivery-content .delivery-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.delivery-banner .delivery-content h2 {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.delivery-banner .delivery-content p {
+  font-size: 18px;
+  color: var(--light-gray);
+}
+
+.delivery-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Delivery End */
 
 /* Main End */
