@@ -34,6 +34,7 @@ a {
 .container {
   max-width: 1300px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .btn {
@@ -266,7 +267,8 @@ a {
 #categories,
 #offers,
 #products,
-#inspiration {
+#inspiration,
+#collections {
   padding: 3rem 0;
 }
 
@@ -331,7 +333,8 @@ a {
   transform: translateY(-50%);
 }
 
-#offers .offers-grid .offer-card .offer-content .offer-tag {
+.offer-tag,
+.collection-tag {
   border: 1px solid;
   border-radius: 20px;
   padding: 3px 15px;
@@ -494,5 +497,36 @@ a {
   margin-bottom: 2px;
 }
 /* Inspiration End */
+/** Collections Start */
+.collection-banner {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.collection-content h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.collection-images {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.collection-images img {
+  width: 120px;
+  height: 200px;
+  transition: transform 0.4s ease;
+}
+
+.collection-images img:hover {
+  transform: translateY(-10px);
+}
+/* Collections End */
 
 /* Main End */
