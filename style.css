@@ -60,6 +60,33 @@ a {
   color: var(--white);
 }
 
+.product-info {
+  padding-top: 1rem;
+}
+
+.product-info span {
+  color: var(--light-gray);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.product-info h3 {
+  margin: 5px 0 12px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.product-info .sale-price {
+  color: var(--red);
+}
+
+.product-info .sale-price del {
+  color: var(--light-gray);
+  font-weight: 300;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
 /* Header Start */
 .navbar {
   padding: 1rem 2rem;
@@ -238,15 +265,17 @@ a {
 /* Categories Start */
 #categories,
 #offers,
-#products {
-  padding: 5rem 0;
+#products,
+#inspiration {
+  padding: 3rem 0;
 }
 
 #categories h2,
 #offers h2,
-#products h2 {
+#products h2,
+#inspiration h2 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 3rem;
 }
 
@@ -383,32 +412,87 @@ a {
   font-size: 12px;
 }
 
-.product-info {
-  padding-top: 1rem;
-}
-
-.product-info span {
-  color: var(--light-gray);
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.product-info h3 {
-  margin: 5px 0 12px;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.product-info .sale-price {
-  color: var(--red);
-}
-
-.product-info .sale-price del {
-  color: var(--light-gray);
-  font-weight: 300;
-  margin-left: 5px;
-  font-size: 14px;
-}
 /* Products End */
+/** Inspiration Start */
+#inspiration h2 a {
+  color: inherit;
+  border-bottom: 1px solid;
+}
+/* 
+#inspiration img {
+  width: 100px;
+} */
+
+#inspiration .inspiration-grid {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 1.5rem;
+}
+
+#inspiration .inspiration-banner {
+  position: relative;
+}
+
+#inspiration .inspiration-banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+#inspiration .inspiration-banner .brand-card {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+#inspiration .inspiration-banner .brand-card img {
+  width: 180px;
+}
+
+#inspiration .inspiration-products .inspiration-product {
+  display: flex;
+  gap: 1rem;
+}
+
+#inspiration .inspiration-products .inspiration-product .product-image {
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+#inspiration .inspiration-products .inspiration-product .product-image img {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+}
+
+#inspiration .inspiration-products .inspiration-product .product-image button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+.total span {
+  display: block;
+  margin-bottom: 2px;
+}
+/* Inspiration End */
 
 /* Main End */
