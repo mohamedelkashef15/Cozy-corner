@@ -30,3 +30,17 @@ const productsSwiper = new Swiper(".products-slider", {
     prevEl: ".products-prev",
   },
 });
+
+const testimonialsSwiper = new Swiper(".testimonials-slider", {
+  loop: true,
+
+  pagination: {
+    el: ".testimonial-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".testimonial-next",
+    prevEl: ".testimonial-prev",
+  },
+});

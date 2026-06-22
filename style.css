@@ -90,7 +90,7 @@ a {
 .light-content {
   color: var(--white);
 }
-
+/* Product Utility classes */
 .product-info {
   padding-top: 1rem;
 }
@@ -116,6 +116,34 @@ a {
   font-weight: 300;
   margin-left: 5px;
   font-size: 14px;
+}
+
+/* Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+/* Pagination */
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--white);
+  opacity: 0.7;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
 /* Header Start */
@@ -260,34 +288,13 @@ a {
 }
 
 /* Arrows */
-.swiper-button-next,
-.swiper-button-prev {
-  width: 40px !important;
-  height: 40px !important;
 
-  border: 1px solid var(--white);
-  border-radius: 50%;
-
+.hero-prev,
+.hero-next {
   color: var(--white) !important;
+  border-color: var(--white);
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 14px !important;
-  font-weight: 700;
-}
-
-/* Pagination */
-.swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: var(--white);
-  opacity: 0.7;
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-  opacity: 1;
-}
 /* Animation +  */
 
 /* Header End */
@@ -300,8 +307,9 @@ a {
 #inspiration,
 #collections,
 #delivery,
-#why-us {
-  padding: 4rem 0;
+#why-us,
+#testimonials {
+  margin: 4rem 0;
 }
 
 #categories h2,
@@ -660,5 +668,55 @@ a {
   color: var(--light-gray);
 }
 /* Why End */
+/* Testimonials Start */
+#testimonials {
+  padding: 2rem 0;
+  background-color: var(--light-green);
+}
+
+.testimonials-slider {
+  position: relative;
+}
+
+.testimonial-content {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 7rem 0;
+}
+
+.testimonial-content .stars i {
+  color: var(--green);
+  margin: 0 2px;
+}
+
+.testimonial-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.testimonial-content .author {
+  font-size: 14px;
+}
+
+.testimonial-content .author {
+  font-size: 1.25rem;
+  color: var(--light-gray);
+}
+
+.testimonial-prev,
+.testimonial-next {
+  color: var(--dark-gray) !important;
+  border-color: var(--dark-gray);
+}
+
+/* Pagenation */
+.testimonial-pagination .swiper-pagination-bullet-active {
+  background-color: var(--green);
+}
+
+/* Testimonials End */
 
 /* Main End */
