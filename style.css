@@ -299,14 +299,16 @@ a {
 #products,
 #inspiration,
 #collections,
-#delivery {
-  padding: 3rem 0;
+#delivery,
+#why-us {
+  padding: 4rem 0;
 }
 
 #categories h2,
 #offers h2,
 #products h2,
-#inspiration h2 {
+#inspiration h2,
+#why-us h2 {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 3rem;
@@ -618,5 +620,45 @@ a {
   color: var(--green);
 }
 /* About End */
+/** Why Start */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.why-card {
+  display: flex;
+  gap: 10px;
+}
+
+.why-card .why-number {
+  /* display: block; */
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 16px;
+}
+
+.why-card .why-number hr {
+  background-color: var(--light-green);
+  height: 2px;
+  border: none;
+}
+
+.why-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.why-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 15px 0 20px;
+}
+.why-card p {
+  color: var(--light-gray);
+}
+/* Why End */
 
 /* Main End */
