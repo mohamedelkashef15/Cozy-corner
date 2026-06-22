@@ -32,7 +32,7 @@ a {
 
 /* Utility classes */
 .container {
-  max-width: 1300px;
+  max-width: 1350px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -308,7 +308,8 @@ a {
 #collections,
 #delivery,
 #why-us,
-#testimonials {
+#testimonials,
+#footer {
   margin: 4rem 0;
 }
 
@@ -718,5 +719,68 @@ a {
 }
 
 /* Testimonials End */
-
 /* Main End */
+
+/** Footer Start */
+#footer {
+  padding: 2rem 0;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 4rem;
+}
+
+.footer-logo {
+  display: block;
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+.footer-info p {
+  display: inline-block;
+  background-color: var(--light-green);
+  padding: 10px 25px;
+  border-radius: 30px;
+  color: var(--dark-gray);
+  margin-bottom: 15px;
+}
+.footer-info address {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer-info a {
+  color: var(--dark-gray);
+  border-bottom: 1px solid var(--dark-gray);
+}
+.footer-info a:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+}
+
+.footer-column h3 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer-column ul li {
+  margin-bottom: 15px;
+}
+
+.footer-column ul li a {
+  color: var(--dark-gray);
+  transition: all 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: var(--green);
+}
+/* Footer End */
