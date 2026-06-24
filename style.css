@@ -874,7 +874,7 @@ a {
 
   .navbar-list {
     position: fixed;
-    top: 80px;
+    top: 70px;
     left: -100%;
     width: 100%;
     background: #fff;
@@ -890,8 +890,8 @@ a {
     left: 0;
   }
 
-  .navbar-list li {
-    margin: 1rem 0;
+  .navbar .navbar-list li {
+    margin: 10px 0;
   }
 
   .header-actions span {
