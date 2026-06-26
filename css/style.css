@@ -597,7 +597,7 @@ a {
 /* About Start */
 #about {
   min-height: 600px;
-  background: url("./images/about-bg.jpg") center/cover no-repeat fixed;
+  background: url("../images/about-bg.jpg") center/cover no-repeat fixed;
   position: relative;
 }
 
